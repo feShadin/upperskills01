@@ -8,6 +8,7 @@ import SpecialOffersSection from '../components/sections/SpecialOffersSection';
 import VisionMissionSection from '../components/sections/VisionMissionSection';
 import FloatingCardGrid from '../components/FloatingCardGrid';
 import IconShowcase from '../components/IconShowcase';
+import PointerLabelShowcase from '../components/sections/PointerLabelShowcase';
 
 const HomePage: React.FC = () => {
   return (
@@ -35,6 +36,9 @@ const HomePage: React.FC = () => {
       
       {/* Interactive Icon Showcase */}
       <IconShowcase />
+      
+      {/* 3D Pointer Label Showcase */}
+      <PointerLabelShowcase />
       
       {/* Floating Contact Popup */}
       <ContactPopup />
