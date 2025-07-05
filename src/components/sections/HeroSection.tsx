@@ -131,7 +131,7 @@ const HeroSection: React.FC = () => {
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
-            <span className="text-white text-sm">
+            <span className="text-white text-body">
               AI Assistant: Welcome to the future of learning! 🚀
             </span>
           </div>
@@ -139,7 +139,7 @@ const HeroSection: React.FC = () => {
 
         {/* Animated Headline with Typewriter */}
         <motion.h1 
-          className="text-4xl md:text-6xl lg:text-8xl font-bold mb-8"
+          className="text-h1 mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -157,7 +157,7 @@ const HeroSection: React.FC = () => {
 
         {/* Subtitle */}
         <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto"
+          className="text-body text-gray-300 mb-12 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}

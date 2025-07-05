@@ -3,6 +3,23 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        'space-grotesk': ['"Space Grotesk"', 'system-ui', '-apple-system', 'sans-serif'],
+        'sans': ['"Space Grotesk"', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['48px', { lineHeight: '1.2', letterSpacing: '0.5px', fontWeight: '700' }],
+        'h2': ['36px', { lineHeight: '1.2', letterSpacing: '0.5px', fontWeight: '700' }],
+        'h3': ['28px', { lineHeight: '1.2', letterSpacing: '0.5px', fontWeight: '500' }],
+        'body': ['18px', { lineHeight: '1.5', fontWeight: '400' }],
+        'button': ['16px', { lineHeight: '1.2', letterSpacing: '0.5px', fontWeight: '600' }],
+      },
+      fontWeight: {
+        'regular': '400',
+        'medium': '500',
+        'semibold': '600',
+        'bold': '700',
+      },
       colors: {
         primary: {
           blue: '#3b82f6',
@@ -19,9 +36,6 @@ export default {
           200: '#e5e7eb',
           100: '#f3f4f6',
         }
-      },
-      fontFamily: {
-        'sf-pro': ['"SF Pro Display"', 'system-ui', 'sans-serif'],
       },
       perspective: {
         '1000': '1000px',

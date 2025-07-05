@@ -2,6 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Space Grotesk Typography System */
+@layer base {
+  * {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply text-5xl font-bold leading-tight tracking-wide;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+  h2 {
+    @apply text-4xl font-bold leading-tight tracking-wide;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    @apply text-3xl font-medium leading-tight tracking-wide;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+  p, body {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Button and Input Typography */
+  button, input, textarea, select {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Form elements specific styling */
+  input::placeholder,
+  textarea::placeholder {
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+}
+
 /* Hide default cursor */
 * {
   cursor: none !important;

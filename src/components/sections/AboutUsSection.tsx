@@ -45,7 +45,7 @@ const AboutUsSection: React.FC = () => {
             {/* Content */}
             <div>
               <motion.h2 
-                className="text-4xl lg:text-5xl font-bold text-white mb-6"
+                className="text-h2 text-white mb-6"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -58,7 +58,7 @@ const AboutUsSection: React.FC = () => {
               </motion.h2>
               
               <motion.p 
-                className="text-lg text-gray-300 mb-8 leading-relaxed"
+                className="text-body text-gray-300 mb-8 leading-relaxed"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -91,7 +91,7 @@ const AboutUsSection: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                   >
                     <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-body text-gray-300">{feature}</span>
                   </motion.div>
                 ))}
               </motion.div>
@@ -122,7 +122,7 @@ const AboutUsSection: React.FC = () => {
                   </motion.div>
                   
                   <motion.div 
-                    className="text-2xl font-bold text-white mb-2"
+                    className="text-h3 text-white mb-2"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
@@ -131,7 +131,7 @@ const AboutUsSection: React.FC = () => {
                     {stat.value}
                   </motion.div>
                   
-                  <div className="text-sm text-gray-400">
+                  <div className="text-button text-gray-400">
                     {stat.label}
                   </div>
                 </motion.div>

@@ -166,7 +166,7 @@ const Header: React.FC = () => {
                 />
               </motion.div>
               <motion.span 
-                className="text-xl font-bold text-white"
+                className="text-h3 text-white"
                 whileHover={{ 
                   scale: 1.05,
                   transition: { duration: 0.2 }
@@ -192,7 +192,7 @@ const Header: React.FC = () => {
                   onMouseLeave={closeDropdown}
                 >
                   <motion.button
-                    className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm transition-all duration-300 flex items-center space-x-1 text-sm font-medium relative overflow-hidden"
+                    className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm transition-all duration-300 flex items-center space-x-1 text-button relative overflow-hidden"
                     whileHover={{ 
                       scale: 1.05,
                       backgroundColor: 'rgba(255, 255, 255, 0.2)',
@@ -270,7 +270,7 @@ const Header: React.FC = () => {
                           >
                             <Link
                               to={dropdownItem.path}
-                              className="block px-4 py-3 text-sm text-white hover:bg-white/10 transition-all duration-200 rounded-lg mx-2 relative overflow-hidden group"
+                              className="block px-4 py-3 text-button text-white hover:bg-white/10 transition-all duration-200 rounded-lg mx-2 relative overflow-hidden group"
                               onClick={closeDropdown}
                             >
                               {/* Hover slide effect */}
@@ -310,7 +310,7 @@ const Header: React.FC = () => {
             >
               <Link
                 to="/contact"
-                className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 text-sm font-medium"
+                className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 text-button"
               >
                 Contact Sales
               </Link>
@@ -323,7 +323,7 @@ const Header: React.FC = () => {
             >
               <Link
                 to="/login"
-                className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 text-sm font-medium"
+                className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 text-button"
               >
                 Log In
               </Link>
@@ -341,7 +341,7 @@ const Header: React.FC = () => {
             >
               <Link
                 to="/register"
-                className="relative inline-flex items-center px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-green-500 rounded-xl overflow-hidden group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
+                className="relative inline-flex items-center px-6 py-2.5 text-button text-white bg-gradient-to-r from-blue-500 to-green-500 rounded-xl overflow-hidden group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
               >
                 {/* Animated background */}
                 <motion.div
@@ -438,7 +438,7 @@ const Header: React.FC = () => {
                     >
                       <div className="space-y-1">
                         <motion.button
-                          className="flex items-center justify-between w-full px-4 py-3 text-left text-base font-medium text-white hover:bg-white/10 rounded-xl transition-all duration-300 relative overflow-hidden group bg-white/5 backdrop-blur-sm border border-white/10"
+                          className="flex items-center justify-between w-full px-4 py-3 text-left text-button text-white hover:bg-white/10 rounded-xl transition-all duration-300 relative overflow-hidden group bg-white/5 backdrop-blur-sm border border-white/10"
                           onClick={() => handleDropdownToggle(item.name)}
                           whileHover={{ x: 5, backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
                           whileTap={{ scale: 0.98 }}
@@ -476,7 +476,7 @@ const Header: React.FC = () => {
                                 >
                                   <Link
                                     to={dropdownItem.path}
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200 bg-white/5 backdrop-blur-sm border border-white/10"
+                                    className="block px-4 py-2 text-button text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200 bg-white/5 backdrop-blur-sm border border-white/10"
                                     onClick={closeMenu}
                                   >
                                     {dropdownItem.name}
@@ -498,7 +498,7 @@ const Header: React.FC = () => {
                   <motion.div whileHover={{ x: 5 }} whileTap={{ scale: 0.98 }}>
                     <Link
                       to="/contact"
-                      className="block px-4 py-3 text-base font-medium text-white hover:bg-white/10 rounded-xl transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10"
+                      className="block px-4 py-3 text-button text-white hover:bg-white/10 rounded-xl transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10"
                       onClick={closeMenu}
                     >
                       Contact Sales
@@ -508,7 +508,7 @@ const Header: React.FC = () => {
                   <motion.div whileHover={{ x: 5 }} whileTap={{ scale: 0.98 }}>
                     <Link
                       to="/login"
-                      className="block px-4 py-3 text-base font-medium text-white hover:bg-white/10 rounded-xl transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10"
+                      className="block px-4 py-3 text-button text-white hover:bg-white/10 rounded-xl transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10"
                       onClick={closeMenu}
                     >
                       Log In
@@ -521,7 +521,7 @@ const Header: React.FC = () => {
                   >
                     <Link
                       to="/register"
-                      className="block px-4 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-500 to-green-500 rounded-xl hover:from-blue-600 hover:to-green-600 transition-all duration-300 text-center shadow-lg shadow-blue-500/25 relative overflow-hidden group"
+                      className="block px-4 py-3 text-button text-white bg-gradient-to-r from-blue-500 to-green-500 rounded-xl hover:from-blue-600 hover:to-green-600 transition-all duration-300 text-center shadow-lg shadow-blue-500/25 relative overflow-hidden group"
                       onClick={closeMenu}
                     >
                       {/* Shimmer effect */}
