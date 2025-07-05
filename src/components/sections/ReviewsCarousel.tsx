@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Quote, User } from 'lucide-react';
 
 const ReviewsCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,48 +9,39 @@ const ReviewsCarousel: React.FC = () => {
   const reviews = [
     {
       id: 1,
-      name: 'Sarah Chen',
+      name: 'Fardin Eihosan',
       role: 'Data Science Student',
       university: 'MIT',
       rating: 5,
       text: 'UpperSkills transformed my learning experience. The AI-powered recommendations helped me master complex algorithms in half the time.',
-      avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+      avatar: 'unknown'
     },
     {
       id: 2,
-      name: 'Marcus Johnson',
+      name: 'Nabid',
       role: 'Software Engineer',
       university: 'Stanford',
       rating: 5,
       text: 'The interactive coding labs and real-time feedback made learning programming languages incredibly engaging and effective.',
-      avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+      avatar: 'unknown'
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
+      name: 'Koushik',
       role: 'Medical Student',
       university: 'Harvard',
       rating: 5,
       text: 'The virtual anatomy labs and AI tutoring system helped me excel in my medical studies. Absolutely revolutionary!',
-      avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+      avatar: 'unknown'
     },
     {
       id: 4,
-      name: 'David Kim',
+      name: 'Shakib',
       role: 'Business Analytics',
       university: 'Wharton',
       rating: 5,
       text: 'The personalized learning paths and industry connections through UpperSkills landed me my dream job at a Fortune 500 company.',
-      avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
-    },
-    {
-      id: 5,
-      name: 'Aisha Patel',
-      role: 'AI Researcher',
-      university: 'Carnegie Mellon',
-      rating: 5,
-      text: 'The cutting-edge AI courses and research opportunities provided by UpperSkills are unmatched. Highly recommended!',
-      avatar: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+      avatar: 'unknown'
     }
   ];
 
@@ -102,10 +93,10 @@ const ReviewsCarousel: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-h2 text-white mb-6">
             What Our Students Say
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-body text-gray-300 max-w-3xl mx-auto">
             Join thousands of successful learners who transformed their careers with UpperSkills
           </p>
         </motion.div>
@@ -156,7 +147,7 @@ const ReviewsCarousel: React.FC = () => {
 
                     {/* Review Text */}
                     <motion.p
-                      className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed"
+                      className="text-body text-gray-300 mb-8 max-w-2xl leading-relaxed"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
@@ -190,20 +181,22 @@ const ReviewsCarousel: React.FC = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.6, duration: 0.6 }}
                     >
-                      <motion.img
-                        src={reviews[currentIndex].avatar}
-                        alt={reviews[currentIndex].name}
-                        className="w-16 h-16 rounded-full border-2 border-blue-400/50"
+                      {/* Unknown Symbol Avatar */}
+                      <motion.div
+                        className="w-16 h-16 rounded-full border-2 border-blue-400/50 bg-gradient-to-br from-blue-500/20 to-green-500/20 backdrop-blur-sm flex items-center justify-center"
                         whileHover={{ scale: 1.1, rotate: 5 }}
-                      />
+                      >
+                        <User className="h-8 w-8 text-blue-400" />
+                      </motion.div>
+                      
                       <div className="text-left">
-                        <h4 className="text-white font-semibold text-lg">
+                        <h4 className="text-white font-semibold text-h3">
                           {reviews[currentIndex].name}
                         </h4>
-                        <p className="text-gray-400">
+                        <p className="text-gray-400 text-body">
                           {reviews[currentIndex].role}
                         </p>
-                        <p className="text-blue-400 text-sm">
+                        <p className="text-blue-400 text-button">
                           {reviews[currentIndex].university}
                         </p>
                       </div>
