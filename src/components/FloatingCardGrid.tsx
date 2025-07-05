@@ -151,17 +151,7 @@ const FloatingCardGrid: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl lg:text-6xl font-bold mb-6"
-            animate={{
-              backgroundImage: [
-                'linear-gradient(45deg, #3b82f6, #10b981)',
-                'linear-gradient(90deg, #8b5cf6, #f59e0b)',
-                'linear-gradient(135deg, #ef4444, #06b6d4)',
-                'linear-gradient(180deg, #10b981, #8b5cf6)',
-                'linear-gradient(45deg, #3b82f6, #10b981)'
-              ]
-            }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            className="text-h2 mb-6"
           >
             <span className="text-white">
               Platform Features
@@ -169,7 +159,7 @@ const FloatingCardGrid: React.FC = () => {
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            className="text-body text-gray-300 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
