@@ -23,23 +23,13 @@ const FloatingCTA: React.FC = () => {
       {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="magnetic bg-white/10 backdrop-blur-xl border border-white/20 p-3 rounded-full text-white hover:bg-white/20 transition-all duration-300 shadow-lg"
+        className="bg-white/10 backdrop-blur-xl border border-white/20 p-2 rounded-full text-white hover:bg-white/20 transition-all duration-300 shadow-lg w-8 h-8 flex items-center justify-center"
         whileHover={{ 
-          scale: 1.1, 
-          boxShadow: '0 0 20px rgba(255, 255, 255, 0.3)' 
+          scale: 1.05
         }}
         whileTap={{ scale: 0.9 }}
-        initial={{ rotate: 0 }}
-        animate={{ 
-          rotate: [0, 360],
-          transition: { 
-            duration: 20, 
-            repeat: Infinity, 
-            ease: "linear" 
-          }
-        }}
       >
-        <ArrowUp className="h-5 w-5" />
+        <ArrowUp className="h-4 w-4" />
       </motion.button>
 
       {/* Floating CTA */}
