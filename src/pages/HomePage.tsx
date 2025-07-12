@@ -37,9 +37,6 @@ const HomePage: React.FC = () => {
       {/* Interactive Icon Showcase */}
       <IconShowcase />
       
-      {/* 3D Pointer Label Showcase */}
-      <PointerLabelShowcase />
-      
       {/* Floating Contact Popup */}
       <ContactPopup />
     </div>
