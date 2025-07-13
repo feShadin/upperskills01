@@ -22,19 +22,22 @@ export default {
       },
       colors: {
         primary: {
-          blue: '#3b82f6',
-          green: '#10b981',
+          purple: '#a434f2',
+          'purple-hover': '#8b2bc7',
         },
-        gray: {
-          900: '#0a0a0a',
-          800: '#1a1a1a',
-          700: '#2a2a2a',
-          600: '#3a3a3a',
-          500: '#6b7280',
-          400: '#9ca3af',
-          300: '#d1d5db',
-          200: '#e5e7eb',
-          100: '#f3f4f6',
+        purple: {
+          DEFAULT: '#a434f2',
+          hover: '#8b2bc7',
+          light: 'rgba(164, 52, 242, 0.1)',
+          medium: 'rgba(164, 52, 242, 0.3)',
+        },
+        black: {
+          DEFAULT: '#000000',
+          light: 'rgba(0, 0, 0, 0.1)',
+          medium: 'rgba(0, 0, 0, 0.3)',
+        },
+        white: {
+          DEFAULT: '#ffffff',
         }
       },
       perspective: {

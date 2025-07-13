@@ -14,7 +14,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-white text-black relative overflow-hidden">
       {/* Enhanced Cursor System */}
       <MagneticCursor />
       
@@ -31,7 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <FxOlogyBackground />
       
       {/* Additional Background Effects */}
-      <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900/10 to-green-900/10" />
+      <div className="fixed inset-0 bg-gradient-to-br from-white via-purple-light to-white" />
       <ParticleSystem />
       
       {/* Grid Pattern Overlay */}
@@ -39,16 +39,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         className="fixed inset-0 opacity-5"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px)
+            linear-gradient(rgba(164, 52, 242, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(164, 52, 242, 0.1) 1px, transparent 1px)
           `,
           backgroundSize: '50px 50px'
         }}
       />
       
       {/* Radial Gradient Overlays */}
-      <div className="fixed inset-0 bg-gradient-radial from-green-500/5 via-transparent to-transparent opacity-50" />
-      <div className="fixed inset-0 bg-gradient-radial from-blue-500/5 via-transparent to-transparent opacity-30" />
+      <div className="fixed inset-0 bg-gradient-radial from-purple-light via-transparent to-transparent opacity-50" />
       
       <div className="relative z-20">
         <Header />

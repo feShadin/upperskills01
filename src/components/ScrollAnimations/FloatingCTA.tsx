@@ -23,7 +23,7 @@ const FloatingCTA: React.FC = () => {
       {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="bg-white/10 backdrop-blur-xl border border-white/20 p-2 rounded-full text-white hover:bg-white/20 transition-all duration-300 shadow-lg w-8 h-8 flex items-center justify-center"
+        className="bg-purple-light backdrop-blur-xl border border-purple/20 p-2 rounded-full text-purple hover:bg-purple/20 transition-all duration-300 shadow-lg w-8 h-8 flex items-center justify-center"
         whileHover={{ 
           scale: 1.05
         }}
