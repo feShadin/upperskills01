@@ -14,45 +14,13 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
-      {/* Enhanced Cursor System */}
-      <MagneticCursor />
-      
-      {/* Scroll Progress Bar */}
+    <div className="min-h-screen bg-white text-black relative">
+      {/* Scroll Progress Bar with Purple Theme */}
       <ScrollProgressBar />
-      
-      {/* Floating CTA */}
-      <FloatingCTA />
-      
-      {/* Floating Elements */}
-      <FloatingElements />
-      
-      {/* FxOlogy-style Background Animation */}
-      <FxOlogyBackground />
-      
-      {/* Additional Background Effects */}
-      <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900/10 to-green-900/10" />
-      <ParticleSystem />
-      
-      {/* Grid Pattern Overlay */}
-      <div 
-        className="fixed inset-0 opacity-5"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}
-      />
-      
-      {/* Radial Gradient Overlays */}
-      <div className="fixed inset-0 bg-gradient-radial from-green-500/5 via-transparent to-transparent opacity-50" />
-      <div className="fixed inset-0 bg-gradient-radial from-blue-500/5 via-transparent to-transparent opacity-30" />
       
       <div className="relative z-20">
         <Header />
-        <main className="scroll-smooth">{children}</main>
+        <main className="scroll-smooth bg-white">{children}</main>
         <Footer />
       </div>
     </div>
