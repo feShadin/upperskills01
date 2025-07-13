@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
                   style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
               <span className="text-xl font-bold text-white">
                 UpperSkills
               </span>
@@ -101,3 +102,5 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+  )
+}
