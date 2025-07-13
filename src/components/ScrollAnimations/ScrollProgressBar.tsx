@@ -13,19 +13,19 @@ const ScrollProgressBar: React.FC = () => {
     <>
       {/* Main Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-blue-500 origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-brand-purple origin-left z-50"
         style={{ scaleX }}
       />
       
       {/* Glow Effect */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-blue-500 origin-left z-49 blur-sm opacity-60"
+        className="fixed top-0 left-0 right-0 h-1 bg-brand-purple origin-left z-49 blur-sm opacity-60"
         style={{ scaleX }}
       />
       
       {/* Progress Percentage Indicator */}
       <motion.div
-        className="fixed top-4 right-4 z-50 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full px-3 py-1 text-xs text-white font-medium"
+        className="fixed top-4 right-4 z-50 bg-brand-purple text-white backdrop-blur-xl border border-brand-purple rounded-full px-3 py-1 text-xs font-medium"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         style={{
