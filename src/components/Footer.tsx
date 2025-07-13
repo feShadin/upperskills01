@@ -21,7 +21,6 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
                 UpperSkills
               </span>
-              </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Next-generation EdTech platform powered by AI. Transform your learning experience with cutting-edge technology and personalized education paths.
