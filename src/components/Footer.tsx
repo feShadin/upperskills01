@@ -18,8 +18,9 @@ const Footer: React.FC = () => {
                   style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
                 UpperSkills
+              </span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
