@@ -56,14 +56,14 @@ const SocialMediaStrip: React.FC = () => {
               />
 
               {/* Icon Container */}
-              <div className="relative w-16 h-16 flex items-center justify-center">
+              <div className="relative w-12 h-12 flex items-center justify-center">
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
                   <social.icon 
-                    className="h-8 w-8 text-white group-hover:text-white transition-colors duration-300"
-                    style={{ filter: `drop-shadow(0 0 10px ${social.color}60)` }}
+                    className="h-6 w-6 text-black group-hover:text-purple transition-colors duration-300"
+                    style={{ filter: `drop-shadow(0 0 8px ${social.color}40)` }}
                   />
                 </motion.div>
               </div>
