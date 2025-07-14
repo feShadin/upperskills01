@@ -93,8 +93,9 @@ const SpecialOffersSection: React.FC = () => {
           </motion.div>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
             Limited Time{' '}
-            <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
               Flash Sale
             </span>
           </h2>

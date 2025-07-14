@@ -146,11 +146,12 @@ const IconShowcase: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-            <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl lg:text-5xl font-bold text-black mb-6">
+            <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
               Interactive Learning Elements
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Hover over each icon to experience our engaging educational animations
           </p>
         </motion.div>

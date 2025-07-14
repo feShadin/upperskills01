@@ -93,10 +93,10 @@ const ReviewsCarousel: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-h2 text-white mb-6">
+          <h2 className="text-h2 text-black mb-6">
             What Our Students Say
           </h2>
-          <p className="text-body text-gray-300 max-w-3xl mx-auto">
+          <p className="text-body text-black max-w-3xl mx-auto">
             Join thousands of successful learners who transformed their careers with UpperSkills
           </p>
         </motion.div>

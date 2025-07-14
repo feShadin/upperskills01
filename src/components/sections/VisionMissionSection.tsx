@@ -13,12 +13,13 @@ const VisionMissionSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
             Our{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
               Vision & Mission
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Shaping the future of education through innovation and accessibility
           </p>
         </motion.div>

@@ -89,7 +89,7 @@ const ContactPopup: React.FC = () => {
 
                 <div className="relative z-10">
                   <motion.h3 
-                    className="text-2xl font-bold text-white mb-6"
+                    className="text-2xl font-bold text-black mb-6"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}

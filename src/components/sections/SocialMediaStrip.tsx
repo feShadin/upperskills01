@@ -21,8 +21,8 @@ const SocialMediaStrip: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold text-white mb-2">Connect With Us</h3>
-          <p className="text-gray-400">Follow our journey across social platforms</p>
+          <h3 className="text-2xl font-bold text-black mb-2">Connect With Us</h3>
+          <p className="text-black">Follow our journey across social platforms</p>
         </motion.div>
 
         <motion.div 
