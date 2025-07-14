@@ -12,7 +12,7 @@ const VisionMissionSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6"></h2>
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
             Our{' '}
             <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
