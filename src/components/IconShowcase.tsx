@@ -146,7 +146,6 @@ const IconShowcase: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-          <h2 className="text-3xl lg:text-5xl font-bold text-black mb-6">
             <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
               Interactive Learning Elements
             </span>
