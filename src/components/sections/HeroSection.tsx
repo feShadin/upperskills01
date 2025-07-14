@@ -220,7 +220,6 @@ const HeroSection: React.FC = () => {
         >
           <motion.div
             className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
-          <span className="block text-black mb-4">Welcome to the</span>
             transition={{ duration: 2, repeat: Infinity }}
           >
             <motion.div
