@@ -93,7 +93,6 @@ const SpecialOffersSection: React.FC = () => {
           </motion.div>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
             Limited Time{' '}
             <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
               Flash Sale
@@ -243,7 +242,7 @@ const SpecialOffersSection: React.FC = () => {
                     className="absolute w-2 h-2 bg-white/20 rounded-full"
                     style={{
                       left: `${20 + i * 30}%`,
-                      top: `${20 + i * 20}%`,
+                      top: `${20 + i * 20}%`
                     }}
                     animate={{
                       y: [0, -20, 0],
