@@ -188,7 +188,7 @@ const HeroSection: React.FC = () => {
               <motion.div
                 className="h-8 w-8 text-purple" 
                 initial={{ x: '-100%' }}
-                  filter: 'drop-shadow(0 0 10px rgba(164, 52, 242, 0.6))'
+                style={{ filter: 'drop-shadow(0 0 10px rgba(164, 52, 242, 0.6))' }}
                 transition={{ duration: 0.3 }}
               />
               <span className="relative z-10">Start Learning Now</span>
