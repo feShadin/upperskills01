@@ -157,7 +157,7 @@ const HeroSection: React.FC = () => {
 
         {/* Subtitle */}
         <motion.p 
-          className="text-body text-gray-300 mb-12 max-w-4xl mx-auto"
+          className="text-body text-black mb-12 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -186,9 +186,9 @@ const HeroSection: React.FC = () => {
               className="relative overflow-hidden group"
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-green-600 opacity-0 group-hover:opacity-100"
+                className="h-8 w-8 text-purple" 
                 initial={{ x: '-100%' }}
-                whileHover={{ x: 0 }}
+                  filter: 'drop-shadow(0 0 10px rgba(164, 52, 242, 0.6))'
                 transition={{ duration: 0.3 }}
               />
               <span className="relative z-10">Start Learning Now</span>
@@ -220,11 +220,11 @@ const HeroSection: React.FC = () => {
         >
           <motion.div
             className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
-            animate={{ y: [0, 10, 0] }}
+          <span className="block text-black mb-4">Welcome to the</span>
             transition={{ duration: 2, repeat: Infinity }}
           >
             <motion.div
-              className="w-1 h-3 bg-white/60 rounded-full mt-2"
+              className="inline-block w-1 h-16 bg-purple ml-2"
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             />

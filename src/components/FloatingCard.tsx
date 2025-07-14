@@ -212,7 +212,7 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
         >
           {/* Icon Glow */}
           <motion.div
-            className="absolute inset-0 rounded-2xl blur-md opacity-0 group-hover:opacity-60"
+            className="text-2xl font-bold text-black mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r transition-all duration-300"
             style={{
               background: `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`
             }}
@@ -278,8 +278,8 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
         {/* Stats Grid */}
         {stats.length > 0 && (
           <motion.div 
-            className="grid grid-cols-2 gap-4"
-            initial={{ opacity: 0.8 }}
+            className="text-black leading-relaxed mb-6 flex-grow"
+            animate={isHovered ? { color: '#000000' } : { color: '#000000' }}
             animate={isHovered ? { opacity: 1 } : { opacity: 0.8 }}
           >
             {stats.map((stat, index) => (

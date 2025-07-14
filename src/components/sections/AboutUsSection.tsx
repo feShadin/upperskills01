@@ -45,20 +45,20 @@ const AboutUsSection: React.FC = () => {
             {/* Content */}
             <div>
               <motion.h2 
-                className="text-h2 text-white mb-6"
+                className="text-h2 text-black mb-6"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 Revolutionizing Education with{' '}
-                <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple to-purple-hover bg-clip-text text-transparent">
                   AI Technology
                 </span>
               </motion.h2>
               
               <motion.p 
-                className="text-body text-gray-300 mb-8 leading-relaxed"
+                className="text-body text-black mb-8 leading-relaxed"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -91,7 +91,8 @@ const AboutUsSection: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                   >
                     <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-body text-gray-300">{feature}</span>
+                    <div className="w-2 h-2 bg-purple rounded-full" />
+                    <span className="text-body text-black">{feature}</span>
                   </motion.div>
                 ))}
               </motion.div>

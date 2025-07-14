@@ -3,7 +3,6 @@ import Header from './Header';
 import Footer from './Footer';
 import FxOlogyBackground from './FxOlogyBackground';
 import ParticleSystem from './ParticleSystem';
-import MagneticCursor from './MagneticCursor';
 import ScrollProgressBar from './ScrollAnimations/ScrollProgressBar';
 import FloatingCTA from './ScrollAnimations/FloatingCTA';
 import FloatingElements from './FloatingElements';
@@ -15,9 +14,6 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-white text-black relative overflow-hidden">
-      {/* Enhanced Cursor System */}
-      <MagneticCursor />
-      
       {/* Scroll Progress Bar */}
       <ScrollProgressBar />
       

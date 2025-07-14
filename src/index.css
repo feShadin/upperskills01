@@ -59,17 +59,12 @@
 
 /* Hide default cursor */
 * {
-  cursor: none !important;
+  cursor: default !important;
 }
 
 /* Magnetic element styles */
 .magnetic {
   @apply cursor-pointer;
-  transition: transform 0.3s ease;
-}
-
-.magnetic:hover {
-  transform: scale(1.02);
 }
 
 /* Educational element styles */

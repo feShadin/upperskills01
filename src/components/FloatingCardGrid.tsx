@@ -153,13 +153,13 @@ const FloatingCardGrid: React.FC = () => {
           <motion.h2 
             className="text-h2 mb-6"
           >
-            <span className="text-white">
+            <span className="text-black">
               Platform Features
             </span>
           </motion.h2>
           
           <motion.p 
-            className="text-body text-gray-300 max-w-3xl mx-auto"
+            className="text-body text-black max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
